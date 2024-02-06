@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuVulnerabilitiesActivity"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/CMDI_menu"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:text="Command Execution" />
+
+    <Button
+        android:id="@+id/XXE_menu"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:text="XML External Entity" />
+
+    <Button
+        android:id="@+id/SQLi_menu"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:text="SQL Injection - UNION" />
+
+    <Button
+        android:id="@+id/STORAGE_menu"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:text="Insecure Data Storage - SQLite" />
+
+    <Button
+        android:id="@+id/LIBvuln_menu"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:text="Lib Vulneravel  - Descontinuada" />
+
+    <Button
+        android:id="@+id/UnprotectedActivity_menu"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:text="Unprotected Android Components – Activity" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ghas_poc</string>
+    <string name="command_execution">Command Execution</string>
+    <string name="seu_comando_aqui">Seu comando aqui</string>
+</resources>
