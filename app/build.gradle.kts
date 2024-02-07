@@ -7,6 +7,11 @@ android {
     namespace = "com.example.ghas_poc"
     compileSdk = 34
 
+
+    packagingOptions {
+        exclude("META-INF/DEPENDENCIES")
+    }
+
     defaultConfig {
         applicationId = "com.example.ghas_poc"
         minSdk = 25
