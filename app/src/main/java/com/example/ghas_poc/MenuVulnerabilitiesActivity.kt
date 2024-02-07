@@ -14,7 +14,6 @@ class MenuVulnerabilitiesActivity : AppCompatActivity() {
     private lateinit var SQLi_menu: Button
     private lateinit var STORAGE_menu: Button
     private lateinit var LIBvuln_menu: Button
-    private lateinit var UnprotectedActivity_menu: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +24,6 @@ class MenuVulnerabilitiesActivity : AppCompatActivity() {
         SQLi_menu = findViewById(R.id.SQLi_menu)
         STORAGE_menu = findViewById(R.id.STORAGE_menu)
         LIBvuln_menu = findViewById(R.id.LIBvuln_menu)
-        UnprotectedActivity_menu = findViewById(R.id.UnprotectedActivity_menu)
 
 
         val username = intent.getStringExtra("USERNAME")
@@ -48,9 +46,22 @@ class MenuVulnerabilitiesActivity : AppCompatActivity() {
             }
 
             STORAGE_menu.setOnClickListener {
-
+                // Ação quando é clicado na opção de Insecure Data Storage
+                val intent_InsecureDataStorage = Intent(this, InsecureDataStorageActivity::class.java)
+                startActivity(intent_InsecureDataStorage)
             }
 
+            SQLi_menu.setOnClickListener {
+                // Ação quando é clicado na opção de Sql Injection Challenge
+                val intent_SQLinjection = Intent(this, SqlInjectionActivity::class.java)
+                startActivity(intent_SQLinjection)
+            }
+
+            LIBvuln_menu.setOnClickListener {
+                // Ação quando é clicado na opção de Biblioteca vulnerável
+                val intent_LibVuln = Intent(this, LibrarieVulnerabilitieRCE::class.java)
+                startActivity(intent_LibVuln)
+            }
 
 
         } else {

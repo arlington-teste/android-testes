@@ -29,6 +29,7 @@ class MyDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NA
 
     // Companheiro do objeto que contém constantes utilizadas para definir o banco de dados
     companion object {
+
         private const val DATABASE_NAME = "mydatabase.db" // Nome do banco de dados
         private const val DATABASE_VERSION = 1 // Versão do banco de dados
 
@@ -44,7 +45,7 @@ class MyDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NA
 }
 
 
-class SqlInjectionActivity : AppCompatActivity() {
+class InsecureDataStorageActivity : AppCompatActivity() {
 
     private lateinit var dbHelper: MyDatabaseHelper
     private lateinit var passwordEditText: EditText
@@ -88,4 +89,3 @@ class SqlInjectionActivity : AppCompatActivity() {
         db.close()
     }
 }
-

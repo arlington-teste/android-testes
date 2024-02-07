@@ -40,9 +40,4 @@
         android:layout_height="wrap_content"
         android:text="Lib Vulneravel  - Descontinuada" />
 
-    <Button
-        android:id="@+id/UnprotectedActivity_menu"
-        android:layout_width="333dp"
-        android:layout_height="wrap_content"
-        android:text="Unprotected Android Components – Activity" />
 </LinearLayout>
