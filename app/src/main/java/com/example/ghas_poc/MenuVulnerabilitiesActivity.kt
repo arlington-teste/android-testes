@@ -47,6 +47,10 @@ class MenuVulnerabilitiesActivity : AppCompatActivity() {
                 startActivity(intent_XXE)
             }
 
+            STORAGE_menu.setOnClickListener {
+
+            }
+
 
 
         } else {
